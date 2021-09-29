@@ -200,7 +200,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             for(let i= 0; i<data[num].jumlah; i++){
                 pilgan1+= `<div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="soal1" id="inlineRadio${i+1}" value="${i+1}">
-                    <label class="form-check-label" for="inlineRadio${i+1}">${i+1}</label>
+                    <label class="form-check-label-vertical" for="inlineRadio${i+1}">${i+1}</label>
                 </div>`
 
                 pilgan2+= `<div class="form-check form-check-inline">

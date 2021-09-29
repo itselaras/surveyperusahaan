@@ -200,9 +200,23 @@
 });
 </script>
 <script>
-    $( document ).ready(function() {
-        console.log(window.location.href)
-    });
+    let currentPage = window.location.href;
+    $('.nav-link').each(function(){
+        if($(this).attr('href') == currentPage){
+            
+            $(".nav-link").removeClass("active");
+            $(this).addClass("active");
+        }
+    })
+    if(currentPage == '<?php echo site_url('survey_controller/pdam_start')?>'){
+        console.log("hello")
+        $('#about').addClass("d-none");
+        $('#survey').addClass("active");
+    }
+    else{
+        $('#about').removeClass("d-none");
+    }
+    
     $('.nav-link').each(function(){
         $(this).click(function(){
             $(".nav-link").removeClass("active");

@@ -41,13 +41,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="<?php echo site_url('survey_controller/index')?>">Beranda</a>
+                  <a class="nav-link" aria-current="page" href="<?php echo site_url('survey_controller/index')?>">Beranda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">Tentang</a>
+                  <a id="about" class="nav-link" href="#about">Tentang</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="<?php echo site_url('survey_controller/dashboard_survey_user')?>">Survey</a>
+                  <a id="survey" class="nav-link" href="<?php echo site_url('survey_controller/dashboard_survey_user')?>">Survey</a>
                 </li>
                 <?php if ($this->session->logged_in){?>
                 <li class="nav-item">
@@ -66,6 +66,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
 
 	</nav>
+	
+	
 	
 	
 	
