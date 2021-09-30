@@ -41,32 +41,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="<?php echo site_url('survey_controller/index')?>">Beranda</a>
+                  <a class="nav-link" href="<?php echo site_url('survey_controller/logout')?>">Keluar</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">Tentang</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php echo site_url('survey_controller/dashboard_survey_user')?>">Survey</a>
-                </li>
-                <?php if ($this->session->logged_in){?>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php echo site_url('survey_controller/dashboard_survey')?>">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php echo site_url('survey_controller/logout')?>">Logout</a>
-                </li>
-                <?php } else {?>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php echo site_url('survey_controller/login')?>">Login</a>
-                </li>
-                <?php }?>
               </ul>
             </div>
         </div>
 
 	</nav>
-    <div class="wrapper" style="padding-top: 150px;">
+    <div class="wrapper" style="padding-top: 150px; padding-bottom: 30px;">
         <div class="container">
             
             <?php if($this->session->flashdata('error'))
@@ -87,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="row">
 
                 <div class="col-md-12">
-                    <div class="card" style="padding: 20px;">
+                    <div class="card" style="padding: 20px 0px 20px 0px;">
                         <div class="card-body">
                             <h4 class="mt-0 header-title text-center" style="margin-bottom: 30px;" id="soal">Pertanyaan Survey</h4>
                             
@@ -124,24 +106,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             $("#jawaban1").text('halo'); 
         }
 
-
+        
     
         function nextPage() {
             $(".question").each(function() {
 
-            var questionId = $(this).attr("id");
-            var answer1 = $("input[name='soal1']:checked", $(this)).val();
-            var answer2 = $("input[name='soal2']:checked", $(this)).val();
-            var essayAnswer = $('#exampleFormControlTextarea1').val();
-                        
-            //if Answer isnt provided do not update the answersList
-            if (1==1) {
-              answersList.push({
-                question: num,
-                answer: data[num-1].jenis == "skala"?[answer1, answer2]:[essayAnswer]
-              });
-              console.log(data[num-1].jenis);
-            }
+                var questionId = $(this).attr("id");
+                var answer1 = $("input[name='soal1']:checked", $(this)).val();
+                var answer2 = $("input[name='soal2']:checked", $(this)).val();
+                var essayAnswer = $('#exampleFormControlTextarea1').val();
+                            
+                //if Answer isnt provided do not update the answersList
+                if (1==1) {
+                  answersList.push({
+                    question: num,
+                    answer: data[num-1].jenis == "skala"?[answer1, answer2]:[essayAnswer]
+                  });
+                  console.log(data[num-1].jenis);
+                }
             });
             $("input[name='soal1']:checked").prop('checked', false);
             $("input[name='soal2']:checked").prop('checked', false);
@@ -175,14 +157,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 if(data[num].jenis == "skala"){
                     let temp = this.generateSkala(data, num);
                     $("#jawaban").html(temp);
-            }else{
-                esai = `<div class="mb-3">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>`
-                $("#jawaban1").html(esai);
-                pilgan2+= `` 
-                $("#jawaban2").html(pilgan2);
-            }
+                }else{
+                    esai = `<div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>`
+                    $("#jawaban1").html(esai);
+                    pilgan2+= `` 
+                    $("#jawaban2").html(pilgan2);
+                }
                 num++;
 
             }
@@ -195,30 +177,66 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         {
             let pilgan1=''
             let pilgan2=''
-            pilgan1+= `<div class="col-lg-6"><div><h6><b>Tingkat Kepuasan</b></h6>`
-            pilgan2+= `<div class="col-lg-6"><div><h6><b>Tingkat Kepentingan</b></h6>`
-            for(let i= 0; i<data[num].jumlah; i++){
-                pilgan1+= `
-                    <label class="form-check-label" for="inlineRadio${i+1}" style="float:left; padding:0 1em; text-align:center">
-                        <input class="form-check-input" type="radio" name="soal1" id="inlineRadio${i+1}" value="${i+1}">
-                        <br/>
-                        ${i+1}
-                    </label>
-                `
-
-                pilgan2+= `
-                        <label class="form-check-label" for="inlineRadio${i+1}" style="float:left; padding:0 1em; text-align:center">
-                            <input class="form-check-input" type="radio" name="soal2" id="inlineRadio${i+1}" value="${i+1}">
+            if(data[num].jumlah == 10){
+                pilgan1+= `<div class="col-lg-12 mb-2"><div><label>STM<br/>&nbsp;</label>`
+                for(let i= 0; i<data[num].jumlah; i++){
+                    pilgan1+= `
+                        <label class="form-check-label" for="inlineRadio${i+1}" style="text-align:center; padding:0px 3px;">
+                            <input class="form-check-input" type="radio" name="soal1" id="inlineRadio${i+1}" value="${i+1}">
                             <br/>
                             ${i+1}
                         </label>
-                `
+                    `
+                }
+                pilgan1+= `<label>SM<br/>&nbsp;</label></div></div>`
+                
+            }else{
+                pilgan1+= `<div class="col-lg-6 mb-3"><div><h6><b>Tingkat Kepuasan</b></h6><label>STP<br/>&nbsp;</label>`
+                pilgan2+= `<div class="col-lg-6"><div><h6><b>Tingkat Kepentingan</b></h6><label>STP<br/>&nbsp;</label>`
+                for(let i= 0; i<data[num].jumlah; i++){
+                    pilgan1+= `
+                        <label class="form-check-label" for="inlineRadio${i+1}" style="text-align:center; padding:0px 5px;">
+                            <input class="form-check-input" type="radio" name="soal1" id="inlineRadio${i+1}" value="${i+1}">
+                            <br/>
+                            ${i+1}
+                        </label>
+                    `
+    
+                    pilgan2+= `
+                            <label class="form-check-label" for="inlineRadio${i+1}" style="text-align:center; padding:0px 5px;">
+                                <input class="form-check-input" type="radio" name="soal2" id="inlineRadio${i+1}" value="${i+1}">
+                                <br/>
+                                ${i+1}
+                            </label>
+                    `
+                }
+                pilgan1+= `<label>SP<br/>&nbsp;</label></div></div>`
+                pilgan2+= `<label>SP<br/>&nbsp;</label></div></div>`
+                pilgan1+= pilgan2
             }
-            pilgan1+= `</div></div>`
-            pilgan2+= `</div></div>`
-            pilgan1+= pilgan2
+
             
             return pilgan1
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer id="footer" class="mt-5">
+ 
+    <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    </div>
+                        <div class="social col-md-4 text-center">
+                            <div class="panel-body" style="margin-top:0px;">
+                                <p class="text-right">
+                                    Copyright &copy; 2020. SMI IT Team
+                                </p>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 panel">
+        
+                </div>
+            </div>
+            </div>
+        </footer>
 </body>

@@ -1098,6 +1098,9 @@ list-style: none;
 	background-color:#000;
 	transition:all 500ms ease;
 }
+.nav-item{
+    text-align: center;
+}
 @media (min-width:320px) and (max-width: 480px) { 
 	.video-list-thumbs .glyphicon-play-circle{
     font-size: 35px;
