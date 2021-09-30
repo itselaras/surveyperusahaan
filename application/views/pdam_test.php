@@ -109,67 +109,76 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         
     
         function nextPage() {
+            let empty = true;
             $(".question").each(function() {
 
                 var questionId = $(this).attr("id");
                 var answer1 = $("input[name='soal1']:checked", $(this)).val();
                 var answer2 = $("input[name='soal2']:checked", $(this)).val();
                 var essayAnswer = $('#exampleFormControlTextarea1').val();
-                            
-                //if Answer isnt provided do not update the answersList
-                if (1==1) {
-                  answersList.push({
-                    question: num,
-                    answer: data[num-1].jenis == "skala"?[answer1, answer2]:[essayAnswer]
-                  });
-                  console.log(data[num-1].jenis);
-                }
-            });
-            $("input[name='soal1']:checked").prop('checked', false);
-            $("input[name='soal2']:checked").prop('checked', false);
-            localStorage.setItem("answer", JSON.stringify(answersList)); //store colors
-            if(num>=data.length-1){
-                $("#btn-nav").removeClass( "btn-primary" );
-                $("#btn-nav").addClass("btn-success");
-                $("#btn-nav").text('Submit');
-            }
-            if(num>=data.length){
-                console.log(localStorage.getItem("answer"))
-                alert("submit")
-                let jawaban = localStorage.getItem("answer");
-                $.ajax({
-                    url: "<?php echo site_url('survey_controller/submit_survey')?>",
-                    type: 'post',
-                    data: { 
-                        'id_user': 1,
-                        'answer': jawaban,
-                        'id_batch': 10
-                    },
-                    dataType: "json",
-                    success: function(response) {
-                    if (response.success == true) {
-                      alert("haloe")
+
+                if(answer1 && answer2){
+                    if (1==1) {
+                        answersList.push({
+                          question: num,
+                          answer: data[num-1].jenis == "skala"?[answer1, answer2]:[essayAnswer]
+                        });
+                        console.log(data[num-1].jenis);
                     }
-                },
-                })
-            }else{
-                $("#soal").text(num+1+'.'+data[num].soal);
-                if(data[num].jenis == "skala"){
-                    let temp = this.generateSkala(data, num);
-                    $("#jawaban").html(temp);
-                }else{
-                    esai = `<div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>`
-                    $("#jawaban1").html(esai);
-                    pilgan2+= `` 
-                    $("#jawaban2").html(pilgan2);
+                    empty = false;
                 }
-                num++;
+                else{
+                    alert("Jawaban Masih Kosong, Mohon diisi terlebih dahulu")
+                    empty = true;
+                }
+                            
 
+            });
+            if(!empty){
+                $("input[name='soal1']:checked").prop('checked', false);
+                $("input[name='soal2']:checked").prop('checked', false);
+                localStorage.setItem("answer", JSON.stringify(answersList)); //store colors
+                if(num>=data.length-1){
+                    $("#btn-nav").removeClass( "btn-primary" );
+                    $("#btn-nav").addClass("btn-success");
+                    $("#btn-nav").text('Submit');
+                }
+                if(num>=data.length){
+                    console.log(localStorage.getItem("answer"))
+                    alert("submit")
+                    let jawaban = localStorage.getItem("answer");
+                    $.ajax({
+                        url: "<?php echo site_url('survey_controller/submit_survey')?>",
+                        type: 'post',
+                        data: { 
+                            'id_user': 1,
+                            'answer': jawaban,
+                            'id_batch': 10
+                        },
+                        dataType: "json",
+                        success: function(response) {
+                        if (response.success == true) {
+                          alert("halo")
+                        }
+                    },
+                    })
+                }else{
+                    $("#soal").text(num+1+'.'+data[num].soal);
+                    if(data[num].jenis == "skala"){
+                        let temp = this.generateSkala(data, num);
+                        $("#jawaban").html(temp);
+                    }else{
+                        esai = `<div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>`
+                        $("#jawaban1").html(esai);
+                        pilgan2+= `` 
+                        $("#jawaban2").html(pilgan2);
+                    }
+                    num++;
+
+                }
             }
-
-            
             
         }
         
