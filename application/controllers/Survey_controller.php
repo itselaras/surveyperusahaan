@@ -766,9 +766,11 @@ class Survey_controller extends CI_Controller {
             'msg' => "Failed to create user",
         ];
         echo json_encode( $response );
+    }
 
+	public function thanks_page()
+	{
 		$this->load->view('thanks_page');
 	    $this->load->view('layout/footer');
-
-    }
+	}
 }
