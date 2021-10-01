@@ -49,8 +49,6 @@
                                         </table>
                                         
             
-                                            <div id="morris-area-example" class="dashboard-charts morris-charts"></div>
-                                        </div>
                                     </div>
                                 </div>
             

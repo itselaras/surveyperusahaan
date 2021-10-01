@@ -20,7 +20,7 @@
                                                         <option>-- Daftar Perusahaan --</option>
                                                         <?php foreach ($perusahaan as $se):?>
                                                         <option value="<?php echo $se->id;?>"><?php echo $se->nama_perusahaan;?></option>
-                                                        <?endforeach?>
+                                                        <?php endforeach?>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-2 text-left" style="padding-top: 10px; padding-bottom: 20px;">
