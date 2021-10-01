@@ -6,7 +6,7 @@ class Survey_controller extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		
+		$this->load->helper('url');
 		$this->load->model('survey_model');
 	}
 	
@@ -766,5 +766,9 @@ class Survey_controller extends CI_Controller {
             'msg' => "Failed to create user",
         ];
         echo json_encode( $response );
+
+		$this->load->view('thanks_page');
+	    $this->load->view('layout/footer');
+
     }
 }
