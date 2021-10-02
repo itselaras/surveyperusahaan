@@ -13,10 +13,26 @@
                                         <div class="card-body">
                                             <h4 class="mt-0 header-title">Tambah Batch</h4>
                                             <form method="post" action="<?php echo ($submit == 'create') ? site_url('survey_controller/submit_batch/'.$id_peru) : site_url('survey_controller/update_batch/'.$batch->id_batch) ?>">
+                                                <!--
                                                 <div class="form-group row">
                                                     <label for="example-text-input" class="col-sm-2 col-form-label">Enrollment Key</label>
                                                     <div class="col-sm-10">
                                                         <input class="form-control" type="text" name="kode" id="kode" value="<?php echo (isset($batch)) ? $batch->enroll : '' ?>">
+                                                    </div>
+                                                </div>
+                                                -->
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">Range User</label>
+                                                    <div class="col-sm-6 row">
+                                                    <div class="col-sm-5">
+                                                        <input class="form-control" type="text" name="kode" id="kode" value="<?php echo (isset($batch)) ? $batch->enroll : '' ?>" placeholder="NIP awal">
+                                                    </div>
+                                                    <div class="col-sm-2 text-center">
+                                                        <span class="material-icons">remove</span>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <input class="form-control" type="text" name="kode" id="kode" value="<?php echo (isset($batch)) ? $batch->enroll : '' ?>" placeholder="NIP akhir">
+                                                    </div>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -31,12 +47,14 @@
                                                         <input class="form-control" name="durasi" type="number" id="durasi" value="<?php echo (isset($batch)) ? round((strtotime($batch->end) - strtotime($batch->start))/3600, 1) : '' ?>" >
                                                     </div>
                                                 </div>
+                                                <!--
                                                 <div class="form-group row">
                                                     <label for="example-text-input" class="col-sm-2 col-form-label">Link Survey</label>
                                                     <div class="col-sm-10">
                                                         <input class="form-control" type="text" name="link" id="link" value="<?php echo (isset($batch)) ? $batch->link : '' ?>">
                                                     </div>
                                                 </div>
+                                                -->
                                             <button type="submit" class="btn btn-primary"><?php echo ($submit == 'create') ? 'Submit' : 'Update' ?></button>
                                             </form>
                                             

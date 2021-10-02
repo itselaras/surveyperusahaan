@@ -132,6 +132,14 @@ class Survey_model extends CI_Model {
                                 
             return $query->row();                    
         }
+
+        public function get_last_batch()
+        {
+            $query = $this->db->select('id_batch')
+                                ->get('batch');
+            
+            return $query->last_row();
+        }
         
         public function user_by_time($user)
         {
