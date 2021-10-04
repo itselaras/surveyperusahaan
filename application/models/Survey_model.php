@@ -144,13 +144,22 @@ class Survey_model extends CI_Model {
 
                 return $query->row();                
         }
+
+        public function get_user_range($id_peru, $start, $end)
+        {
+            $this->db->select('*')
+                                ->from('peserta_survey')
+                                ->where('id_perusahaan', $id_peru);
+                                $query = $this->db->get();
+
+                return $query->row(); 
+        }
         
-        public function get_question_survey($id_perusahaan, $jenis)
+        public function get_question_survey($id_perusahaan)
         {
             $this->db->select('*');
             $this->db->from('soal_survey');
             $this->db->where('id_perusahaan', $id_perusahaan);
-            $this->db->where('jenis', $jenis);
             $query = $this->db->get();
             
             return $query->result(); 

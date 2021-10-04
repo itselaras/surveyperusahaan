@@ -76,7 +76,7 @@ class Survey_controller extends CI_Controller {
 	{
 	    $perusahaan = $this->input->post('perusahaan');
         $alamat = $this->input->post('alamat');
-        $kode = $this->input->post('kode');
+        //$kode = $this->input->post('kode');//
         $alat = $this->input->post('alat');
         $tanggal = $this->input->post('tanggal');
         $durasi = $this->input->post('durasi');
@@ -572,7 +572,28 @@ class Survey_controller extends CI_Controller {
 
 	public function submit_batch($id_peru)
 	{
+<<<<<<< HEAD
         $enroll = $this->input->post('kode');
+=======
+
+		$peru = $this->survey_model->get_perusahaan_by_id($id_peru);
+		$peru = $peru->nama_perusahaan;
+		$kode_peru = substr($peru,0,4);
+		$last_batch = $this->survey_model->get_last_batch();
+		$last_batch = $last_batch->id_batch;
+		$id_batch = '';
+
+		if($last_batch)
+		{
+			$id_batch = $last_batch + 1;
+		}else
+		{
+			$id_batch = 1;
+		}
+
+		$nama_batch = $kode_peru . "-" . $id_peru . "" . $id_batch;
+
+>>>>>>> 37300802c2c5f5a6d72117efbc57e6afea6a2176
         $tanggal = $this->input->post('tanggal');
         $durasi = $this->input->post('durasi');
         $tgl = date('Y-m-d', strtotime($tanggal));
@@ -589,6 +610,22 @@ class Survey_controller extends CI_Controller {
                 'link' => $link
             );
         $this->db->insert('batch', $insert_batch);
+
+		$insert_id = $this->db->insert_id();
+
+		$start = $this->input->post('start');
+		$end = $this->input->post('end');
+		$range = $this->survey_model->get_range_user($start, $end);
+
+		foreach($range as $ra)
+		{
+			$id_user = $ra->id_user;
+			$insert_batch_user = array(
+                'id_batch' => $insert_id,
+				'id_user' => $id_user
+            );
+        	$this->db->insert('batch_user', $insert_batch_user);
+		}
         
         redirect(site_url('survey_controller/batch'));
 	}
