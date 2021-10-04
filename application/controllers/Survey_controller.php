@@ -76,7 +76,7 @@ class Survey_controller extends CI_Controller {
 	{
 	    $perusahaan = $this->input->post('perusahaan');
         $alamat = $this->input->post('alamat');
-        $kode = $this->input->post('kode');
+        //$kode = $this->input->post('kode');//
         $alat = $this->input->post('alat');
 		
         /*$tanggal = $this->input->post('tanggal');
