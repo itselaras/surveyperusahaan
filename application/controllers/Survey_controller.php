@@ -572,9 +572,6 @@ class Survey_controller extends CI_Controller {
 
 	public function submit_batch($id_peru)
 	{
-<<<<<<< HEAD
-        $enroll = $this->input->post('kode');
-=======
 
 		$peru = $this->survey_model->get_perusahaan_by_id($id_peru);
 		$peru = $peru->nama_perusahaan;
@@ -593,7 +590,6 @@ class Survey_controller extends CI_Controller {
 
 		$nama_batch = $kode_peru . "-" . $id_peru . "" . $id_batch;
 
->>>>>>> 37300802c2c5f5a6d72117efbc57e6afea6a2176
         $tanggal = $this->input->post('tanggal');
         $durasi = $this->input->post('durasi');
         $tgl = date('Y-m-d', strtotime($tanggal));
