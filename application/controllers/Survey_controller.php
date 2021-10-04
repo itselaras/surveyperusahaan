@@ -78,20 +78,17 @@ class Survey_controller extends CI_Controller {
         $alamat = $this->input->post('alamat');
         $kode = $this->input->post('kode');
         $alat = $this->input->post('alat');
-		
-        /*$tanggal = $this->input->post('tanggal');
+        $tanggal = $this->input->post('tanggal');
         $durasi = $this->input->post('durasi');
         $tgl1 = date('Y/m/d H:i:s', strtotime($tanggal));
-        $tgl2 = date('Y/m/d H:i:s', strtotime('+'.$durasi.' hours', strtotime($tanggal)));*/
+        $tgl2 = date('Y/m/d H:i:s', strtotime('+'.$durasi.' hours', strtotime($tanggal)));
 
         $insert_perusahaan = array(
                 'nama_perusahaan' => $perusahaan,
                 'alamat' => $alamat,
-				/*
                 'kode_perusahaan' => $kode,
                 'start' => $tgl1,
                 'end' => $tgl2
-				*/
             );
         $this->db->insert('perusahaan', $insert_perusahaan);
         
@@ -114,22 +111,18 @@ class Survey_controller extends CI_Controller {
 	{
 	    $perusahaan = $this->input->post('perusahaan');
         $alamat = $this->input->post('alamat');
-        
-		/*$kode = $this->input->post('kode');
+        $kode = $this->input->post('kode');
         $tanggal = $this->input->post('tanggal');
         $durasi = $this->input->post('durasi');
         $tgl1 = date('Y/m/d H:i:s', strtotime($tanggal));
         $tgl2 = date('Y/m/d H:i:s', strtotime('+'.$durasi.' hours', strtotime($tanggal)));
-		*/
 
         $data = array(
                 'nama_perusahaan' => $perusahaan,
                 'alamat' => $alamat,
-				/*
                 'kode_perusahaan' => $kode,
                 'start' => $tgl1,
                 'end' => $tgl2
-				*/
             );
         $this->db->set($data);
         $this->db->where('id', $id);
@@ -579,35 +572,21 @@ class Survey_controller extends CI_Controller {
 
 	public function submit_batch($id_peru)
 	{
-		$peru = $this->survey_model->get_perusahaan_by_id($id_peru);
-		$peru = $peru->nama_perusahaan;
-		$kode_peru = substr($peru,0,4);
-		$last_batch = $this->survey_model->get_last_batch();
-		$last_batch = $last_batch->id_batch;
-		$id_batch = '';
-
-		if($last_batch)
-		{
-			$id_batch = $last_batch + 1;
-		}else
-		{
-			$id_batch = 1;
-		}
-
-		$nama_batch = $kode_peru . "-" . $id_peru . "" . $id_batch;
-
+        $enroll = $this->input->post('kode');
         $tanggal = $this->input->post('tanggal');
         $durasi = $this->input->post('durasi');
         $tgl = date('Y-m-d', strtotime($tanggal));
         $tgl1 = date('Y/m/d H:i:s', strtotime($tanggal));
         $tgl2 = date('Y/m/d H:i:s', strtotime('+'.$durasi.' hours', strtotime($tanggal)));
+        $link = $this->input->post('link');
 
         $insert_batch = array(
                 'perusahaan_id' => $id_peru,
-				'nama_batch' => $nama_batch,
                 'tanggal' => $tgl,
+                'enroll' => $enroll,
                 'start' => $tgl1,
                 'end' => $tgl2,
+                'link' => $link
             );
         $this->db->insert('batch', $insert_batch);
         
@@ -753,9 +732,25 @@ class Survey_controller extends CI_Controller {
 	    $this->load->view('pdam_start_tes');
 	    $this->load->view('layout/footer');
 	}
+
+	public function user_verification(){
+		$nip = $this->input->post('nip');
+		$on_batch = $this->survey_model->user_verification($nip);
+		$start = date_parse($on_batch->start);
+		$end = date_parse($on_batch->end);
+		$startBatch = $start["year"].''.$start["month"].''.$start["day"].''.$start["hour"].''.$start["minute"].''.$start["second"];
+		$endBatch = $end["year"].''.$end["month"].''.$end["day"].''.$end["hour"].''.$end["minute"].''.$end["second"];
+		$dateNow = date("YmdHis");
+		if((int)$dateNow<=(int)$endBatch && (int)$dateNow>=(int)$startBatch){
+			print_r("Hello world!");
+		}
+	}
 	
 	public function pdam_test($type)
 	{
+
+
+		$this->session->set_userdata(['gender' => $gender]);
 		switch($type){
 			case 1:
 				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);

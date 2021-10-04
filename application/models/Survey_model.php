@@ -132,14 +132,6 @@ class Survey_model extends CI_Model {
                                 
             return $query->row();                    
         }
-
-        public function get_last_batch()
-        {
-            $query = $this->db->select('id_batch')
-                                ->get('batch');
-            
-            return $query->last_row();
-        }
         
         public function user_by_time($user)
         {
@@ -162,6 +154,16 @@ class Survey_model extends CI_Model {
             $query = $this->db->get();
             
             return $query->result(); 
+        }
+
+        public function user_verification($nip){
+            $this->db->select('*');
+            $this->db->from('user_survey');
+            $this->db->join('batch', 'user_survey.id_batch = batch.id_batch');
+            $this->db->where('nip', $nip);
+            $query = $this->db->get();
+            
+            return $query->row(); 
         }
         
 }
