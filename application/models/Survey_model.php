@@ -174,5 +174,16 @@ class Survey_model extends CI_Model {
             
             return $query->row(); 
         }
+
+        public function soal_by_perusahaan($id_perusahaan)
+        {
+                $this->db->select('*')
+                                ->from('soal_survey as A')
+                                ->join('perusahaan as B', 'A.id_perusahaan = B.id')
+                                ->where('A.id_perusahaan', $id_perusahaan);
+                                $query = $this->db->get();
+
+                return $query->result();                
+        }
         
 }
