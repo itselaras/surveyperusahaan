@@ -51,4 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'survey_controller';
 $route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+$route['translate_uri_dashes'] = TRUE;
+
+
+$route['pdam_test/(:any)'] = 'survey_controller/pdam_test/$1';

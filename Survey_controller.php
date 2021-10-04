@@ -732,48 +732,11 @@ class Survey_controller extends CI_Controller {
 	    $this->load->view('pdam_start_tes');
 	    $this->load->view('layout/footer');
 	}
-
-	public function user_verification(){
-		$nip = $this->input->post('nip');
-		$on_batch = $this->survey_model->user_verification($nip);
-		$start = date_parse($on_batch->start);
-		$end = date_parse($on_batch->end);
-		$startBatch = $start["year"].''.$start["month"].''.$start["day"].''.$start["hour"].''.$start["minute"].''.$start["second"];
-		$endBatch = $end["year"].''.$end["month"].''.$end["day"].''.$end["hour"].''.$end["minute"].''.$end["second"];
-		$dateNow = date("YmdHis");
-		if((int)$dateNow<=(int)$endBatch && (int)$dateNow>=(int)$startBatch){
-			print_r("Hello world!");
-		}
-	}
 	
-	public function pdam_test($type)
+	public function pdam_test()
 	{
-
-
-		$this->session->set_userdata(['gender' => $gender]);
-		switch($type){
-			case 1:
-				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
-				$data['jenis'] = $type;
-	    		$this->load->view('pdam_test', $data);
-				break;
-			case 2:
-				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
-				$data['jenis'] = $type;
-	    		$this->load->view('pdam_test', $data);
-				break;
-			case 3:
-				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
-				$data['jenis'] = $type;
-	    		$this->load->view('pdam_test', $data);
-				break;
-			case 4:
-				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
-				$data['jenis'] = $type;
-	    		$this->load->view('pdam_test', $data);
-				break;
-		}
-	    
+	    $data['pertanyaan'] = $this->survey_model->get_question_survey(7);
+	    $this->load->view('pdam_test', $data);
 	}
 	
 	public function user_batch()
@@ -803,11 +766,9 @@ class Survey_controller extends CI_Controller {
             'msg' => "Failed to create user",
         ];
         echo json_encode( $response );
-    }
 
-	public function thanks_page()
-	{
 		$this->load->view('thanks_page');
 	    $this->load->view('layout/footer');
-	}
+
+    }
 }

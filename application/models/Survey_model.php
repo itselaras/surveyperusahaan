@@ -145,14 +145,25 @@ class Survey_model extends CI_Model {
                 return $query->row();                
         }
         
-        public function get_question_survey($id_perusahaan)
+        public function get_question_survey($id_perusahaan, $jenis)
         {
             $this->db->select('*');
             $this->db->from('soal_survey');
             $this->db->where('id_perusahaan', $id_perusahaan);
+            $this->db->where('jenis', $jenis);
             $query = $this->db->get();
             
             return $query->result(); 
+        }
+
+        public function user_verification($nip){
+            $this->db->select('*');
+            $this->db->from('user_survey');
+            $this->db->join('batch', 'user_survey.id_batch = batch.id_batch');
+            $this->db->where('nip', $nip);
+            $query = $this->db->get();
+            
+            return $query->row(); 
         }
         
 }

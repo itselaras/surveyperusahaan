@@ -156,3 +156,392 @@
 [28-Jul-2021 14:13:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ':' in /home/selar353/public_html/sekolah/application/views/dashboard.php on line 17
 [20-Aug-2021 03:00:34 UTC] PHP Fatal error:  Cannot declare class Spreadsheet because the name is already in use in /home/selar353/public_html/surveyperusahaan/application/controllers/Spreadsheet.php on line 8
 [23-Aug-2021 07:03:25 UTC] PHP Fatal error:  Cannot redeclare Survey_controller::perusahaan() in /home/selar353/public_html/surveyperusahaan/application/controllers/Survey_controller.php on line 28
+[30-Sep-2021 11:46:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:46:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:46:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:46:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:46:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:46:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:46:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:46:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:47:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:47:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:47:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:47:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:47:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:48:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:48:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:48:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:48:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:50:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:52:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:53:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:53:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:53:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:55:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:57:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:57:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 11:57:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:03:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:08:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:08:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:08:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:08:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:10:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:10:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:11:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:14:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:18:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:18:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:18:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:18:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:18:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:19:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:20:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:32:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:32:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:33:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:35:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:36:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:36:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:37:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:37:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:42:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:47:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:57:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 12:59:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:01:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/tes.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/tes.php on line 9
+[30-Sep-2021 13:02:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:02:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:04:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/tes2.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/tes2.php on line 9
+[30-Sep-2021 13:14:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/tes4.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/tes4.php on line 2
+[30-Sep-2021 13:14:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/tes4.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/tes4.php on line 2
+[30-Sep-2021 13:45:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:45:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:45:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:45:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:45:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:46:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:47:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:49:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function site_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:56:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:56:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:56:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:56:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:57:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:57:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:58:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:58:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:58:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:58:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:58:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:58:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:58:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:59:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:59:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:59:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:59:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 13:59:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:00:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:00:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:00:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:01:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:04:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:05:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:05:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:05:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:05:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:05:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[30-Sep-2021 14:05:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function base_url() in /home/selar353/public_html/surveyperusahaan/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/selar353/public_html/surveyperusahaan/index.php on line 15
+[01-Oct-2021 15:34:44 Asia/Jakarta] PHP Deprecated:  The behavior of unparenthesized expressions containing both '.' and '+'/'-' will change in PHP 8: '+'/'-' will take a higher precedence in /home/selar353/public_html/surveyperusahaan/application/views/pdam_test.php on line 167
