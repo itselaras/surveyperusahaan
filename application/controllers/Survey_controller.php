@@ -76,7 +76,6 @@ class Survey_controller extends CI_Controller {
 	{
 	    $perusahaan = $this->input->post('perusahaan');
         $alamat = $this->input->post('alamat');
-        //$kode = $this->input->post('kode');//
         $alat = $this->input->post('alat');
         $tanggal = $this->input->post('tanggal');
         $durasi = $this->input->post('durasi');
@@ -86,10 +85,6 @@ class Survey_controller extends CI_Controller {
         $insert_perusahaan = array(
                 'nama_perusahaan' => $perusahaan,
                 'alamat' => $alamat,
-                /*'kode_perusahaan' => $kode,
-                'start' => $tgl1,
-                'end' => $tgl2
-				*/
             );
         $this->db->insert('perusahaan', $insert_perusahaan);
         
@@ -140,7 +135,7 @@ class Survey_controller extends CI_Controller {
 	/*User*/
 	public function user_survey()
 	{
-	    if($this->session->userdata("logged_in") !== true)
+	    if($this->session->logged_in !== true)
          {
          redirect(site_url(),'refresh');
          }
@@ -843,5 +838,30 @@ class Survey_controller extends CI_Controller {
 	{
 		$this->load->view('thanks_page');
 	    $this->load->view('layout/footer');
+	}
+
+	public function soal_survey()
+	{
+		if($this->session->logged_in !== true)
+         {
+         redirect(site_url(),'refresh');
+         }
+         
+        $peru = $this->input->post('perusahaan'); 
+	    $perusahaan = $this->survey_model->get_perusahaan_all();
+	    
+	    if(!empty($perusahaan))
+	    {
+	        $soal = $this->survey_model->soal_by_perusahaan($peru);
+	        $data['soal'] = $soal;
+	    }
+	    $user = $this->survey_model->user_by_perusahaan($peru);
+	    $data['sek'] = $peru;
+	    $data['perusahaan'] = $perusahaan;
+
+		$this->load->view('layout-admin/topbar');
+		$this->load->view('layout-admin/sidebar');
+		$this->load->view('soal_survey', $data);
+		$this->load->view('layout-admin/footer');
 	}
 }
