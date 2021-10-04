@@ -20,7 +20,7 @@
                                                         <option>-- Daftar Perusahaan --</option>
                                                         <?php foreach ($perusahaan as $se):?>
                                                         <option value="<?php echo $se->id;?>" <?php echo $se->id == $id_peru ? 'selected' : '';?> ><?php echo $se->nama_perusahaan;?></option>
-                                                        <?endforeach?>
+                                                        <?php endforeach?>
                                                     </select>
                                                     </a>
                                                 </div>
@@ -53,7 +53,7 @@
                                             <thead>
                                             <tr>
                                                 <th>No</th>
-                                                <th>Enrollment Key</th>
+                                                <th>Nama Batch</th>
                                                 <th>Tanggal Survey</th>
                                                 <th>Action</th>
                                             </tr>
@@ -64,10 +64,10 @@
                                             <tr>
                                                 <td><?php echo $i;?></td>
                                                 <?php $i++;?>
-                                                <td><?php echo $pe->enroll;?></td>
+                                                <td><?php echo $pe->nama_batch;?></td>
                                                 <td><?php echo $pe->tanggal;?></td>
-                                                <td class="text-center"><a class="btn btn-rounded btn-warning waves-effect waves-light" href="<?php echo site_url('survey_controller/edit_batch/'.$pe->id_batch)?>">Edit</a>
-                                                                        <a class="btn btn-rounded btn-danger waves-effect waves-light" href="<?php echo site_url('survey_controller/delete_batch/'.$pe->id_batch)?>">Delete</a>
+                                                <td class="text-center"><a class="btn btn-rounded btn-warning waves-effect waves-light" href="<?php echo site_url('survey_controller/edit_batch/'.$pe->id_batch);?>">Edit</a>
+                                                                        <a class="btn btn-rounded btn-danger waves-effect waves-light" href="<?php echo site_url('survey_controller/delete_batch/'.$pe->id_batch);?>">Delete</a>
                                                 </td>
                                             </tr>
                                             <?php endforeach;?>

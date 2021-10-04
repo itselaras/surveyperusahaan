@@ -20,7 +20,7 @@
                                                         <option>-- Daftar Perusahaan --</option>
                                                         <?php foreach ($perusahaan as $se):?>
                                                         <option value="<?php echo $se->id;?>" <?php echo $se->id == $sek ? 'selected' : '';?> ><?php echo $se->nama_perusahaan;?></option>
-                                                        <?endforeach?>
+                                                        <?php endforeach;?>
                                                     </select>
                                                     </a>
                                                 </div>
@@ -46,7 +46,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <?php endif ?>
+                                            <?php endif;?>
                                             <?php if (isset($user)):?>
                                             <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap">
                                             <thead>
@@ -72,7 +72,7 @@
                                             <?php endforeach;?>
                                             </tbody>
                                         </table>
-                                        <?php endif?>
+                                        <?php endif;?>
                                         
             
                                             

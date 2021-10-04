@@ -30,6 +30,9 @@
         <link href="<?php echo base_url('assets-2/css/metismenu.min.css')?>" rel="stylesheet" type="text/css">
         <link href="<?php echo base_url('assets-2/css/icons.css')?>" rel="stylesheet" type="text/css">
         <link href="<?php echo base_url('assets-2/css/style.css')?>" rel="stylesheet" type="text/css">
+
+        <!--Material Design Icon-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
