@@ -145,11 +145,12 @@ class Survey_model extends CI_Model {
                 return $query->row();                
         }
         
-        public function get_question_survey($id_perusahaan)
+        public function get_question_survey($id_perusahaan, $jenis)
         {
             $this->db->select('*');
             $this->db->from('soal_survey');
             $this->db->where('id_perusahaan', $id_perusahaan);
+            $this->db->where('jenis', $jenis);
             $query = $this->db->get();
             
             return $query->result(); 
