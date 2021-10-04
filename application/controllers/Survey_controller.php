@@ -579,6 +579,7 @@ class Survey_controller extends CI_Controller {
 
 	public function submit_batch($id_peru)
 	{
+
 		$peru = $this->survey_model->get_perusahaan_by_id($id_peru);
 		$peru = $peru->nama_perusahaan;
 		$kode_peru = substr($peru,0,4);
@@ -610,6 +611,22 @@ class Survey_controller extends CI_Controller {
                 'end' => $tgl2,
             );
         $this->db->insert('batch', $insert_batch);
+
+		$insert_id = $this->db->insert_id();
+
+		$start = $this->input->post('start');
+		$end = $this->input->post('end');
+		$range = $this->survey_model->get_range_user($start, $end);
+
+		foreach($range as $ra)
+		{
+			$id_user = $ra->id_user;
+			$insert_batch_user = array(
+                'id_batch' => $insert_id,
+				'id_user' => $id_user
+            );
+        	$this->db->insert('batch_user', $insert_batch_user);
+		}
         
         redirect(site_url('survey_controller/batch'));
 	}
