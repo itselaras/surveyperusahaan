@@ -86,9 +86,10 @@ class Survey_controller extends CI_Controller {
         $insert_perusahaan = array(
                 'nama_perusahaan' => $perusahaan,
                 'alamat' => $alamat,
-                'kode_perusahaan' => $kode,
+                /*'kode_perusahaan' => $kode,
                 'start' => $tgl1,
                 'end' => $tgl2
+				*/
             );
         $this->db->insert('perusahaan', $insert_perusahaan);
         
