@@ -771,10 +771,31 @@ class Survey_controller extends CI_Controller {
 	    $this->load->view('layout/footer');
 	}
 	
-	public function pdam_test()
+	public function pdam_test($type)
 	{
-	    $data['pertanyaan'] = $this->survey_model->get_question_survey(7);
-	    $this->load->view('pdam_test', $data);
+		switch($type){
+			case 1:
+				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
+				$data['jenis'] = $type;
+	    		$this->load->view('pdam_test', $data);
+				break;
+			case 2:
+				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
+				$data['jenis'] = $type;
+	    		$this->load->view('pdam_test', $data);
+				break;
+			case 3:
+				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
+				$data['jenis'] = $type;
+	    		$this->load->view('pdam_test', $data);
+				break;
+			case 4:
+				$data['pertanyaan'] = $this->survey_model->get_question_survey(7, $type);
+				$data['jenis'] = $type;
+	    		$this->load->view('pdam_test', $data);
+				break;
+		}
+	    
 	}
 	
 	public function user_batch()
