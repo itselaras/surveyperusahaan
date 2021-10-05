@@ -71,7 +71,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     ?>
                 
                 <div style="padding: 30px;">
-                    <h4 class="text-muted font-18 m-b-5 text-center">Selamat Datang Brooooo</h4>
+                    <h4 class="text-muted font-18 m-b-5 text-center">Selamat Datang</h4>
                     <p class="text-muted text-center">Silahkan masukkan user dan password.</p>
 
                     <form class="form-horizontal" style="margin-top: 30px;" method="POST" action="<?php echo site_url('survey_controller/login_attempt')?>">
