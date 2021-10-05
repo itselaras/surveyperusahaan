@@ -23,12 +23,12 @@
                                                 </div>
                                             </div>
                                             
-                                            <table id="datatable-report" class="table table-striped table-bordered dt-responsive nowrap">
+                                            <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap">
                                             <thead>
                                             <tr>
                                                 <th>No</th>
                                                 <th>Nama Perusahaan</th>
-                                                <th>Kode Perusahaan</th>
+                                                <th>Alamat</th>
                                                 <th>Action</th>
                                             </tr>
                                             </thead>
@@ -39,7 +39,7 @@
                                                 <td><?php echo $i;?></td>
                                                 <?php $i++;?>
                                                 <td><?php echo $se->nama_perusahaan;?></td>
-                                                <td><?php echo $se->kode_perusahaan;?></td>
+                                                <td><?php echo $se->alamat;?></td>
                                                 <td class="text-center"><a class="btn btn-rounded btn-warning waves-effect waves-light" href="<?php echo site_url('survey_controller/edit/'.$se->id)?>">Edit</a>
                                                                         <a class="btn btn-rounded btn-danger waves-effect waves-light" href="<?php echo site_url('survey_controller/delete/'.$se->id)?>">Delete</a>
                                                 </td>
@@ -49,8 +49,6 @@
                                         </table>
                                         
             
-                                            <div id="morris-area-example" class="dashboard-charts morris-charts"></div>
-                                        </div>
                                     </div>
                                 </div>
             
@@ -63,8 +61,9 @@
                 
                 <script>
                 $(document).ready(function () { 
-                    $("#datatable-buttons").table2excel({ 
-                        filename: "Students.xls" 
+                    //Buttons examples
+                    var table = $('#datatable').DataTable({
+                        "scrollX": true
                     }); 
                  }); 
                 </script>

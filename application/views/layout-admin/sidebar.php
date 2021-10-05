@@ -24,6 +24,10 @@
                             <li>
                                 <a href="<?php echo site_url('survey_controller/batch');?>" class="waves-effect"><i class="mdi mdi-calendar-check"></i><span> Batchs</span></a>
                             </li>
+                            <li>
+                                <a href="<?php echo site_url('survey_controller/soal_survey');?>" class="waves-effect"><i class="mdi mdi-calendar-check"></i><span> Soal</span></a>
+                            </li>
+                            
 
                         </ul>
 

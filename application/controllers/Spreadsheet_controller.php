@@ -57,11 +57,13 @@ class Spreadsheet_controller extends CI_Controller {
 			    {
 			        $no_soal = $sheetData[$i]['0'];
 				    $soal = $sheetData[$i]['1'];
+					$jenis = $sheetData[$i]['2'];
 
 				    $ar = array(							
 							'no_soal' => $no_soal,
 							'id_perusahaan' => $id_perusahaan,
-							'soal' => $soal
+							'soal' => $soal,
+							'jenis' => $jenis
 				    	);			    	
 				  		$this->spreadsheet_model->insert('soal_survey', $ar);
 			    }
