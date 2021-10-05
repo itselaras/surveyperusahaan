@@ -12,7 +12,7 @@
                                     <div class="card m-b-20">
                                         <div class="card-body">
                                             
-                                            <form method="post" action="<?php echo site_url('survey_controller/user_survey');?>">
+                                            <form method="post" action="<?php echo site_url('survey_controller/soal_survey');?>">
                                             <div class="row" style="padding: 20px 0px;">
                                                 <label class="col-sm-2 col-form-label">Pilih Perusahaan</label>
                                                 <div class="col-md-10 text-right">
@@ -38,9 +38,9 @@
                                             <?php if (isset($sek)):?>
                                             <div class="row" style="padding: 20px 0px;">
                                                 <div class="col-md-12 text-right">
-                                                    <a class="pull-right" href="<?php echo site_url('survey_controller/generate/'.$sek);?>">
+                                                    <a class="pull-right" href="<?php echo site_url('survey_controller/import_perusahaan');?>">
                                                     <span class="btn btn-rounded btn-success waves-effect waves-light">
-                                                        <i class="ti-plus"></i> Generate User                 
+                                                        <i class="ti-plus"></i> Import User                 
 
                                                     </span>
                                                     </a>
