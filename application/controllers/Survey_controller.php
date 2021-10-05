@@ -1037,15 +1037,10 @@ class Survey_controller extends CI_Controller {
 
 	    $perusahaan = $this->input->post('perusahaan');
 
-	    $report = $this->survey_model->get_report($perusahaan);
-
-	    
-
-	    $data['report'] = $report;
-
-	    $data['perusahaan'] = $perusahaan;
-
-	    
+	    $data['report_type1'] = $this->survey_model->get_report($perusahaan, "1");;
+	    $data['report_type2'] = $this->survey_model->get_report($perusahaan, "2");;
+	    $data['report_type3'] = $this->survey_model->get_report($perusahaan, "3");;
+	    $data['report_type4'] = $this->survey_model->get_report($perusahaan, "4");;
 
 	    $this->load->view('layout-admin/topbar');
 
